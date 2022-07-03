@@ -41,3 +41,8 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.headerlist {
+    color:rgb(15, 1, 1);
+    background-color: none
+}

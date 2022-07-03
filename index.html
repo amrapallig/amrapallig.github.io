@@ -4,30 +4,228 @@
 	<head>
 		<title>Amrapalli Garanaik</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
-	<body style="background-image:url('images/GLOBE_stripes.png'); background-repeat: no-repeat;  background-size: 100% 25%;">
+	<body style="background-image:url('images/GLOBE_stripes.png'); background-repeat: no-repeat;  background-size: 100% 2%;">
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-			<li><a href="/research">Research</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-			<li><a href="/projects">Projects</a></li>
+	        	<li><a class="headerlist" href="#overview">Overview</a></li>
+			    <li><a class="headerlist" href="#research">Research</a></li>
+        		<li><a class="headerlist" href="docs/Amrapalli_Garanaik_CV.pdf" target="_blank">CV</a></li>
+			    <li><a class="headerlist" href="#publications" target="_blank">Publications</a></li>
     		</ul>
 		</nav>
 		<div class="container">
     		<div class="blurb">
         		<h1> Amrapalli Garanaik, Ph.D.</h1>
-				<p>I am a resercher in Environmental Fluid Mechanics focusing in Enginnering and Physical Oceanography applications. <a href="/about">Read more about my life...</a></p>
+				<p>I am interested in understanding the physics of small-scale turbulent mixing and its impact on large-scale 
+					geophysical and environmental flows. I use numerical simulations (DNS, LES, RANS) in conjuction with theory
+				    and experimental/observational data to understand our Earth system in changing climate.
+				 </p> 
+				 
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
     		<ul>
         		<li><a href="mailto:amrapallig@gmail.com">email</a></li>
-        		<li><a href="https://github.com/amrapallig">github.com/amrapallig</a></li>
+        		<li><a href="https://github.com/amrapallig" target="_blank">github.com/amrapallig</a></li>
+				<li><a href="https://scholar.google.com/citations?user=7nq9s04AAAAJ&hl=en" target="_blank">google scholar</a></li>
+				
 			</ul>
 		</footer>
+        
+		
+
+		<div id="research"> <h2 >My Research </h2>
+			<p>
+
+			</p>
+
+			<div id="adc-lang"> 
+				<h2>Langmuir turbulence:</h2>
+				<img src="images/lang.png"  width= "400" height="300" alt=" contact me" 
+				         style="float:left; margin-right:5%; margin-top: 1% ; margin-bottom: 1% " />
+			   <p>
+				This study proposes a new paramaterization for Langmuir turbulence that is an extension of ADC scheme for convective and wind-driven mixing, where flow is separated into downwelling and upwelling regions with distinct
+				properties. The paramaeterization is compared against a suite of large eddy simulations (LES) simulated using 
+				<a href="https://github.com/CliMA/Oceananigans.jl" target="_blank" alt=" under review" >Oceananigans.jl. </a> 
+				<a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank" alt=" under review" >Read more... </a> 
+			   </p>
+			</div>
+			<br/> <br/> <br/> <br/>
+			<div id="adc"> 
+				<h2>New OSBL mixing scheme (ADC):</h2>
+				<img src="images/osbl.jpg"  width= "400" height="400" alt=" contact me" 
+				         style="float:left; margin-right:5%; margin-top: 1% ; margin-bottom: 1% " />
+			   <p>
+				Here, we develop a new physically-motivated mixing
+				scheme for OSBL turbulence that is inspired from atmospheric boundary layer parameterizations. 
+				Results show that the proposed mixing scheme can simulate the physics of OSBL
+				convective turbulence efficiently suggesting its potential use in GCMs to help reduce model biases in
+				large-scale climate system. <a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank" alt=" under review" >Read more... </a> 
+			   </p>
+			   
+			</div>
+
+			<br/> <br/>
+			<br/> <br/>
+			<br/> <br/>
+			<div id="mpaso"> 
+				<h2>LIGHT on EARTH (mesoscale/isopycnal mixing):</h2>
+				<img src="images/light.jpg"  width= "360" height="280" alt=" contact me" 
+				         style="float:left; margin-right:5%; margin-top: 1% ; margin-bottom: 1% " />
+			    <p>
+					
+					In this study,  the Energy Exascale Earth System Model (E3SM) is used in conjunction with Lagrangian in Situ 
+					Global High-Performance Particle Tracking (LIGHT) module for analyzing turbulence statistics in high-resolution 
+					ocean models. The focus of the work is to develop better parameterization
+					of isopycnal diffusivity using LIGHT data in E3SM simulations and evaluate an improved nonlinear closure model.
+					<a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank" alt=" under review" >Read more... </a> 
+				</p>
+			</div>
+			<br/> <br/> <br/> <br/>
+			<div id="DNS"> 
+				<h2>DNS of stratified turbulence:</h2>
+				<img src="images/figure2 copy.jpeg"  width= "500" height="150" alt=" contact me" 
+				         style="float:left; margin-right:5%; margin-top: 1% ; margin-bottom: 5% " />
+			   <p>
+				Direct Numerical simulation (DNS) provides full description of turbulent flow field ranging
+				from energy containing large eddy scale to small dissipative Kolmogorov scale without involving
+				any parameterization of small-scale physics. This study performs DNS of stably stratified decaying turbulence 
+				to better understand flow dynamics and mixing in stably stratified turbulent flows.
+				<a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank" alt=" under review" >Read more... </a> 
+			   </p>
+			</div>
+			<br/> <br/> <br/> <br/>
+			<div id="parameterizations"> 
+				<h2>Diapycnal mixing and improved parameterizations:</h2>
+	
+				<img src="images/dia_mixing.png"  width= "400" height="250" alt=" contact me" 
+				         style="float:left; margin-right:5%; margin-top: 1% ; margin-bottom: 5% " />
+			    <p>
+					In this study improved parameterizations of diapycnal mixing is proposed with scaling arguments 
+					and validated with Direct numerical simulations with implications of practical applications.
+					 <a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank" alt=" under review" >Read more... </a> 
+					
+				</p>
+			</div>
+            <br/> <br/> <br/> <br/> <br/> <br/>
+
+			<div id="lagrangian"> 
+				<h2>Lagrangian (particles) dispersion and mixing:</h2>
+				<img src="images/lagrangian.png"  width= "450" height="200" alt=" contact me" 
+				         style="float:left; margin-right:5% ; margin-top: 1%; margin-bottom: 5%  " />
+				<p>
+					Lagrangian statistics provide an in-depth understanding of particle dispersion in a fluid in motion. 
+					A particle dispersion study therefore provides fundamental insights on turbulent
+					diffusion and ultimately turbulent mixing in stably stratified turbulent flows. In this study
+					we have used a Lagrangian framework in DNS to study diapycnal mixing by identifying the true diapycnal
+					length scale and velocity scale.
+					<a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank" alt=" under review" >Read more... </a>
+				</p>
+			    
+			</div>
+			<br/> <br/> <br/>
+			<div id="kepsilon"> 
+				<h2>RANS and turbulence closure schemes:</h2>
+				<img src="images/ceps3_60.png"  width= "360" height="200" alt=" contact me" 
+				         style="float:left; margin-right:5%; margin-top: 1%; margin-bottom: 0.1%   " />
+			    <p>
+					This study investigates the effects of buoyancy forces in the standard RANS turbulence-closure scheme 
+					for modeling stably stratified wall-bounded turbulent flows. Numerical simulations are implemented in 
+					General Ocean Turbulence Model (GOTM) and the results are compared with direct numerical simulation (DNS)
+					data of stably stratified channel flow.
+					<a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank" alt=" under review" >Read more... </a> 
+				</p>
+			</div>
+			<br/>
+
+			<br/>
+			<div id="ocean"> 
+				<h2>Observational Ocean mixing: </h2>
+				<img src="images/AG_Oceanography_2016.jpg"  width= "350" height="200" alt=" contact me" 
+				         style="float:left; margin-right:5%; margin-top: 1% ; margin-bottom: 0.1% " />
+			    <p>
+					<a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank">Read more...</a>
+				</p>
+			</div>
+			<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+			<div id="lab"> 
+				<h2>Experimental Fluid Mechanics: LDA and ADV: </h2>
+				<img src="images/Rastelloetal_R2.jpg"  width= "350" height="240" alt=" contact me" 
+				         style="float:left; margin-right:5%; margin-top: 1%; margin-bottom: 5%  " />
+			    <p>
+				
+					This work involves study of turbulent open-channel flows using Acoustic Doppler
+					Velocimetry (ADV) and Laser Doppler Anemometry (LDA). The experiments are conducted in a recirculationg 
+					flume at Colorado State University and interesting findings about sensor assessment are presented with 
+					implications for practical applications.
+					<a href="#docs/Amrapalli_Garanaik_CV.pdf" target="_blank">Read more...</a>
+				</p>
+			</div>
+
+			
+			
+		</div>	
+		
+		
+		        <br/>
+
+				<br/>
+		
+		
+		<div id="publications"> <h2>My Publications</h2>
+			<p>
+				Garanaik, A., Venayagamoorthy, S. K., 2019 “On the inference of the state of turbulence and
+				mixing efficiency in stably stratified flows”, J. Fluid Mech. 867, 323-333 <br/>
+
+				<br/>
+
+
+				Garanaik, A., Venayagamoorthy, S. K., 2018 “Assessment of small-scale anisotropy in stably
+				stratified turbulent flows using direct numerical simulations”, Phys. Fluids 30, 126602 <br/>
+
+				<br/>
+
+				Shroyer, E. L., Rudnick, D. L., Farrar, T., Lim, B., Venayagamoorthy, S. K., Laurent, L. C. St.,
+				Garanaik, A., Moum, J. N. 2016 “Modification of upper ocean temperature structure by subsurface
+				mixing in presence of strong salinity stratification”, Oceanography 29(2), 62-71 <br/>
+
+				<br/>
+
+				Rastello, M., Klema, M.R., Carpenter, A., Garanaik, A., Venayagamoorthy, S. K., Gates, T. K.,
+				Marie, J. L. 2021, “Velocity measurements in an open-channel flow with high free-stream
+				turbulence: Acoustic Doppler Velocimetry (ADV) vs Laser Doppler Anemometry (LDA)”, Flow
+				Measurement, and Instrumentation. In Review. <br/>
+
+				<br/>
+
+				Garanaik, A., Smith, K., Robey, R., Li, Q., Pearson, B., Roekel, L. V., “A new hybrid mass-flux/high-order
+				turbulence closure for ocean vertical mixing”, JAMES, In review <br/>
+
+				<br/>
+
+				Garanaik, A., Venayagamoorthy, S. K. “Some new insights for inferring diapycnal diffusivity in
+				stably stratified turbulence”, Physics of Fluid, Submitted <br/>	
+
+				<br/>
+
+				Garanaik, A., Karimpour, F., Venayagamoorthy, S. K. “Evaluation of the standard k-epsilon
+				closure scheme for modeling stably stratified wall-bounded turbulence”, nearing submission, J.Ocean modelling. <br/>
+				
+				<br/>
+
+				Garanaik, A., Petersen, M. R., Wolfram, P. J., “Horizontal and vertical variability of isopycnal
+				diffusivity from online Lagrangian particles in high resolution global ocean model”, Work in Progress <br/>
+			
+				<br/>
+
+				Garanaik, A, Roekel, L. V., Pearson, B., “ADC approach for parameterization of Langmuir
+				turbulence in upper ocean”, Work in progress. <br/>
+
+			</p>
+
+		</div>
+
 	</body>
 </html>
