@@ -66,142 +66,164 @@
       <span class="eyebrow">What I work on</span>
       <h2>Research</h2>
       <p class="section-lede">
-        My work bridges scales, from centimeter-scale turbulence in the lab and in DNS to
-        global ocean models, with the goal of building physically grounded mixing parameterizations for climate prediction.
+        I study turbulence and mixing across scales, from centimeter-scale eddies in the lab and in direct
+        numerical simulations to global ocean models. The goal is to build physically grounded parameterizations
+        that improve climate prediction.
       </p>
 
-      <h3 class="sub">Current projects</h3>
-      <div class="projects">
-        <div class="project">
-          <span class="tag">OSBL turbulence</span>
-          <h4>Nonlocal second-moment upper-ocean boundary layer modeling</h4>
-          <p>Physically based, nonlocal second-moment turbulence closures built from high-resolution simulations and theory, to improve mixing in the ocean surface boundary layer.</p>
+      <ul class="theme-nav">
+        <li><a href="#t-upper">Upper-ocean dynamics</a></li>
+        <li><a href="#t-param">Vertical mixing parameterizations</a></li>
+        <li><a href="#t-esm">Earth system modeling</a></li>
+        <li><a href="#t-les">LES &amp; GPU computing</a></li>
+        <li><a href="#t-strat">Stratified turbulence</a></li>
+        <li><a href="#t-lagr">Particle tracking</a></li>
+        <li><a href="#t-ice">Ice–ocean interactions</a></li>
+        <li><a href="#t-lab">Laboratory experiments</a></li>
+      </ul>
+
+      <!-- Each theme: optional image, description, "Current work" and "Past work" lists.
+           Links use class="pub". Copy an <li> to add an item. -->
+
+      <article class="theme" id="t-upper">
+        <div class="theme-media pair"><img src="images/cruise.jpg" alt="Research vessel at sea"><img src="images/smode-logo.jpeg" alt="NASA S-MODE logo" class="contain"></div>
+        <div class="theme-body">
+          <h3>Upper-ocean dynamics &amp; air–sea interaction</h3>
+          <p>How wind, surface waves, solar heating and buoyancy forcing drive turbulence in the ocean surface boundary layer, and how that turbulence controls the exchange of heat and momentum with the atmosphere.</p>
+          <h4>Current work</h4>
+          <ul>
+            <li>Diurnal warm layers under variable winds and surface waves, combining simulations with observations from Buzzards Bay. <span class="who">With S. Zippel, T. Kukulka, M. Scully, F. C. Yeh</span></li>
+            <li>Air–sea heat and momentum flux response to SST and surface-current variability from Saildrone observations in NASA's S-MODE experiment. <span class="who">With R. Samelson, L. O'Neill</span> <a class="pub" href="publications.html#in-prep">Manuscript in prep</a></li>
+            <li>Coupling of the tropical air–sea boundary layers through observational analysis and multiscale coupled modeling.</li>
+            <li>Surface waves and vertical mixing in wintertime sea-ice leads. <span class="who">With A. Lee, J. Hutchings, B. Pearson</span> <a class="pub" href="publications.html#in-prep">Manuscript in prep</a></li>
+          </ul>
+          <h4>Past work</h4>
+          <ul>
+            <li>Subsurface mixing and upper-ocean temperature structure in the Bay of Bengal (ASIRI), including uCTD fieldwork aboard R/V <em>Roger Revelle</em>, 2014. <a class="pub" href="https://doi.org/10.5670/oceanog.2016.39">Oceanography 2016</a></li>
+          </ul>
         </div>
-        <div class="project">
-          <span class="tag">Earth system modeling</span>
-          <h4>Plume-based turbulence closures for Earth system models</h4>
-          <p>Nonlocal, high-order and mass-flux parameterizations of the ocean surface boundary layer, implemented and tested in E3SM/MPAS-Ocean.</p>
+      </article>
+
+      <article class="theme" id="t-param">
+        <div class="theme-media"><img src="images/osbl.jpg" alt="Schematic of ocean surface boundary layer turbulence with local and non-local transport" class="contain"></div>
+        <div class="theme-body">
+          <h3>New vertical mixing parameterizations</h3>
+          <p>Physically based turbulence closures that capture the non-local, non-diffusive mixing done by convective plumes and Langmuir cells, which standard eddy-diffusivity schemes miss.</p>
+          <h4>Current work</h4>
+          <ul>
+            <li>A plume-based, non-local turbulence closure for realistic, time-varying and non-equilibrium forcing, built to run on GPUs. <a class="pub" href="https://meetings-archive.aps.org/dfd/2025/u31/1/">APS DFD 2025</a></li>
+            <li>Nonlocal second-moment modeling of the upper-ocean boundary layer, constrained by large eddy simulations and observations.</li>
+            <li>An assumed-distribution, high-order closure for wave-driven Langmuir turbulence. <a class="pub" href="publications.html#in-prep">Manuscript in prep</a></li>
+          </ul>
+          <h4>Past work</h4>
+          <ul>
+            <li>A hybrid mass-flux/high-order turbulence closure for ocean vertical mixing. <a class="pub" href="https://doi.org/10.1029/2023MS003846">JAMES 2024</a> <a class="pub" href="https://meetings-archive.aps.org/dfd/2023/l27/10/">APS DFD 2023</a></li>
+            <li>A plume-based high-order closure that captures convective and Langmuir mixing. <a class="pub" href="https://meetings-archive.aps.org/dfd/2024/x28/6/">APS DFD 2024</a></li>
+            <li>Evaluation of the standard k–ε closure for stably stratified wall-bounded turbulence. <a class="pub" href="publications.html#in-prep">Manuscript in prep</a></li>
+          </ul>
         </div>
-        <div class="project">
-          <span class="tag">Air–sea interaction</span>
-          <h4>Air–sea interaction from Saildrone observations</h4>
-          <p>How sea-surface temperature variability and surface currents shape air–sea momentum and heat fluxes.</p>
+      </article>
+
+      <article class="theme no-media" id="t-esm">
+        <div class="theme-body">
+          <h3>Earth system modeling</h3>
+          <p>Implementing and testing new ocean physics in the U.S. Department of Energy's Energy Exascale Earth System Model (E3SM) and its ocean component, MPAS-Ocean, to reduce biases in climate simulations.</p>
+          <h4>Current work</h4>
+          <ul>
+            <li>Implementing and evaluating plume-based hybrid mass-flux/high-order closures in E3SM/MPAS-Ocean.</li>
+            <li>Wildfire and regional coupled modeling on Oregon State University's Huang Complex supercomputer.</li>
+          </ul>
+          <h4>Past work</h4>
+          <ul>
+            <li>Developed and implemented a new boundary layer scheme in MPAS-Ocean at Los Alamos National Laboratory (2019–2021). <a class="pub" href="https://doi.org/10.1029/2023MS003846">JAMES 2024</a></li>
+            <li>Online Lagrangian particles in eddy-resolving MPAS-Ocean simulations on NERSC supercomputers (see <a href="#t-lagr">Particle tracking</a>).</li>
+          </ul>
         </div>
-        <div class="project">
-          <span class="tag">Upper-ocean dynamics</span>
-          <h4>Diurnal warm layers and stabilizing surface fluxes</h4>
-          <p>Simulations and observations of how diurnal heating, variable winds and surface waves affect turbulence in the upper ocean.</p>
+      </article>
+
+      <article class="theme" id="t-les">
+        <div class="theme-media"><img src="images/GPU.png" alt="Speed-up of ocean LES on CPUs and GPUs" class="contain"></div>
+        <div class="theme-body">
+          <h3>Large eddy simulation &amp; GPU computing</h3>
+          <p>High-resolution large eddy simulations (LES) of ocean turbulence on modern GPU hardware, used as the benchmark for building and testing parameterizations.</p>
+          <h4>Current work</h4>
+          <ul>
+            <li>GPU-accelerated LES with <a href="https://github.com/CliMA/Oceananigans.jl">Oceananigans.jl</a> on NVIDIA A100, V100 and H100 GPUs and Grace Hopper systems at OSU. <a class="pub" href="https://agu.confex.com/agu/OSM24/meetingapp.cgi/Paper/1484469">OSM 2024</a></li>
+            <li>LES of Langmuir turbulence and wave- and wind-driven mixing to study wave–current interaction and vertical transport.</li>
+          </ul>
+          <h4>Past work</h4>
+          <ul>
+            <li>LES of convective and Langmuir turbulence in the surface boundary layer, used to validate new mixing schemes. <a class="pub" href="https://doi.org/10.1029/2023MS003846">JAMES 2024</a></li>
+          </ul>
         </div>
-        <div class="project">
-          <span class="tag">Coupled modeling</span>
-          <h4>Coupling of the tropical air–sea boundary layers</h4>
-          <p>Observational analysis and multiscale coupled modeling of ocean–atmosphere boundary-layer processes.</p>
+      </article>
+
+      <article class="theme" id="t-strat">
+        <div class="theme-media"><img src="images/a2.jpeg" alt="DNS snapshots of stratified turbulence" class="contain"></div>
+        <div class="theme-body">
+          <h3>Stratified turbulence &amp; mixing</h3>
+          <p>Direct numerical simulation (DNS) and theory that show how stable stratification controls turbulence, mixing efficiency and diapycnal diffusivity, and how mixing can be inferred from quantities measured in the field.</p>
+          <h4>Past work</h4>
+          <ul>
+            <li>New insights for inferring diapycnal (irreversible) diffusivity in stably stratified turbulence. <a class="pub" href="https://doi.org/10.1063/5.0102762">Phys. Fluids 2022</a></li>
+            <li>Inferring the state of turbulence and mixing efficiency in stably stratified flows. <a class="pub" href="https://doi.org/10.1017/jfm.2019.142">J. Fluid Mech. 2019</a></li>
+            <li>Small-scale anisotropy in stably stratified turbulence from DNS. <a class="pub" href="https://doi.org/10.1063/1.5055871">Phys. Fluids 2018</a></li>
+          </ul>
         </div>
-        <div class="project">
-          <span class="tag">HPC · Regional modeling</span>
-          <h4>Wildfire and regional coupled modeling</h4>
-          <p>Wildfire and regional coupled modeling on Oregon State University's Huang Complex supercomputer.</p>
+      </article>
+      <!-- VIDEOS: to add a clip, copy the <figure> below.
+           Short MP4 (< ~10 MB) in images/:  <video src="images/CLIP.mp4" autoplay muted loop playsinline controls></video>
+           YouTube: <div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Title" allowfullscreen loading="lazy"></iframe></div> -->
+      <figure class="video theme-video" id="videos">
+        <img src="images/dns_density.gif" alt="Animation of the density field in DNS of stratified turbulence at three Richardson numbers" loading="lazy">
+        <figcaption>Density field over time in DNS of stably stratified turbulence at Richardson numbers Ri = 0.01, 1 and 10. Stronger stratification suppresses vertical overturning and mixing.</figcaption>
+      </figure>
+
+      <article class="theme" id="t-lagr">
+        <div class="theme-media"><img src="images/light.jpg" alt="Lagrangian particles in a global ocean model"></div>
+        <div class="theme-body">
+          <h3>Lagrangian particle tracking &amp; mesoscale mixing</h3>
+          <p>Following water parcels through turbulent and eddying flows to measure transport, dispersion and mixing directly.</p>
+          <h4>Current work</h4>
+          <ul>
+            <li>GPU-enabled Lagrangian particle tracking in high-resolution LES, to study particle transport, dispersion and non-local turbulent mixing.</li>
+          </ul>
+          <h4>Past work</h4>
+          <ul>
+            <li>Horizontal and vertical variability of isopycnal diffusivity from online Lagrangian particles (the LIGHT package) in eddy-resolving MPAS-Ocean. <span class="who">With M. R. Petersen, P. J. Wolfram</span> <a class="pub" href="publications.html#in-prep">Manuscript in prep</a></li>
+          </ul>
         </div>
-      </div>
+      </article>
+
+      <article class="theme no-media" id="t-ice">
+        <div class="theme-body">
+          <h3>Ice–ocean interactions</h3>
+          <p>How ocean turbulence and waves near ice affect melting and mixing at polar boundaries.</p>
+          <h4>Current work</h4>
+          <ul>
+            <li>Exploratory simulations of internal waves generated by glacier calving and subglacial discharge, and their role in submarine melting at Greenland's marine-terminating glaciers. <span class="who">With J. Cusack, K. Zhao</span> <a class="pub" href="publications.html#presentations">OSM 2026 · AGU 2025</a></li>
+            <li>Turbulent mixing in wintertime sea-ice leads (see <a href="#t-upper">Upper-ocean dynamics</a>).</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="theme" id="t-lab">
+        <div class="theme-media"><img src="images/Rastelloetal_R2.jpg" alt="Laboratory flume with moving traverse" style="object-position:center 30%"></div>
+        <div class="theme-body">
+          <h3>Laboratory experiments</h3>
+          <p>Measuring turbulence in the lab to test instruments and theory.</p>
+          <h4>Past work</h4>
+          <ul>
+            <li>Turbulent open-channel flow measured with Acoustic Doppler Velocimetry (ADV) and Laser Doppler Anemometry (LDA) on a moving traverse at Colorado State University. <a class="pub" href="https://doi.org/10.1016/j.flowmeasinst.2022.102206">Flow Meas. Instrum. 2022</a></li>
+            <li>Rotating-table and salt-fingering experiments (see <a href="funprojects.html">Fun Projects</a>).</li>
+          </ul>
+        </div>
+      </article>
 
       <h3 class="sub">Emerging directions</h3>
       <ul class="chips emerging">
-        <li>Langmuir turbulence &amp; wave–wind-driven mixing</li>
-        <li>Surface waves in wintertime sea-ice leads</li>
-        <li>GPU-accelerated Lagrangian particle tracking in LES</li>
-        <li>Internal waves &amp; submarine melting at Greenland glaciers</li>
-        <li>Physics-informed machine learning for turbulence closures</li>
+        <li>Physics-informed machine learning for high-order turbulent fluxes</li>
       </ul>
-
-      <h3 class="sub">Research highlights</h3>
-      <div class="cards">
-
-        <article class="card">
-          <div class="card-media contain"><img src="images/osbl.jpg" alt="Schematic of ocean surface boundary layer turbulence"></div>
-          <div class="card-body">
-            <span class="tag">Earth system modeling</span>
-            <h3>A new boundary layer scheme for Earth system models</h3>
-            <p>We developed a physically motivated hybrid mass-flux/high-order mixing scheme for ocean surface boundary layer (OSBL) turbulence and implemented it in MPAS-Ocean, the ocean component of the DOE's Energy Exascale Earth System Model (E3SM). It captures OSBL physics driven by buoyancy, wind and waves efficiently, which makes it a promising way to reduce climate-model biases.</p>
-            <div class="card-links"><a href="https://doi.org/10.1029/2023MS003846">JAMES 2024 →</a></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-media contain"><img src="images/a2.jpeg" alt="DNS snapshots of stratified turbulence"></div>
-          <div class="card-body">
-            <span class="tag">DNS · Theory</span>
-            <h3>Stratified turbulence through direct numerical simulation</h3>
-            <p>DNS of stably stratified turbulence reveals flow dynamics and mixing. It provides physics-based parameterizations of diapycnal mixing and ways to infer them from quantities that can be measured in the field.</p>
-            <div class="card-links">
-              <a href="https://doi.org/10.1017/jfm.2019.142">JFM 2019</a>
-              <a href="https://doi.org/10.1063/5.0102762">Phys. Fluids 2022</a>
-              <a href="https://doi.org/10.1063/1.5055871">Phys. Fluids 2018</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-media pair"><img src="images/smode-logo.jpeg" alt="NASA S-MODE logo" style="object-fit:contain;padding:16px;background:#fff"><img src="images/cruise.jpg" alt="Research cruise at sea"></div>
-          <div class="card-body">
-            <span class="tag">Observations</span>
-            <h3>Air–sea interaction from satellite and in-situ data</h3>
-            <p>As a member of the air–sea interaction and velocity working groups in NASA's Sub-Mesoscale Ocean Dynamics Experiment (S-MODE), I study surface flux estimates and their response to SST and ocean currents. At sea, I deployed uCTDs aboard R/V <em>Roger Revelle</em> in the Bay of Bengal during the 2014 ASIRI program.</p>
-            <div class="card-links"><a href="https://doi.org/10.5670/oceanog.2016.39">Oceanography 2016 →</a></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-media contain"><img src="images/GPU.png" alt="Ocean LES on GPU platforms"></div>
-          <div class="card-body">
-            <span class="tag">HPC · LES</span>
-            <h3>Large eddy simulations of the ocean on GPUs</h3>
-            <p>We run ocean LES with <a href="https://github.com/CliMA/Oceananigans.jl">Oceananigans.jl</a> on NVIDIA A100, V100 and H100 GPUs and on Grace Hopper systems at Oregon State University, which makes high-resolution studies of Langmuir turbulence and sea-ice-lead mixing possible.</p>
-            <div class="card-links"><a href="https://agu.confex.com/agu/OSM24/meetingapp.cgi/Paper/1484469">OSM 2024 abstract →</a></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-media"><img src="images/light.jpg" alt="Lagrangian particle trajectories in a global ocean model"></div>
-          <div class="card-body">
-            <span class="tag">Mesoscale · Lagrangian</span>
-            <h3>Mesoscale mixing from Lagrangian particles</h3>
-            <p>Using the LIGHT particle-tracking package (Lagrangian, In situ, Global, High-performance particle Tracking) in eddy-resolving MPAS-Ocean (E3SM) on NERSC supercomputers, we quantify horizontal and vertical variability of isopycnal diffusivity to develop better parameterizations.</p>
-            <div class="card-links"><a href="publications.html#in-prep">Manuscript in preparation →</a></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-media"><img src="images/Rastelloetal_R2.jpg" alt="Laboratory flume experiment" style="object-position:center 30%"></div>
-          <div class="card-body">
-            <span class="tag">Laboratory</span>
-            <h3>Experimental fluid mechanics</h3>
-            <p>We measured turbulent open-channel flows with Acoustic Doppler Velocimetry (ADV) and Laser Doppler Anemometry (LDA) on a moving traverse in a recirculating flume at Colorado State University, and the results show how the two sensors compare in practice.</p>
-            <div class="card-links"><a href="https://doi.org/10.1016/j.flowmeasinst.2022.102206">Flow Meas. Instrum. 2022 →</a></div>
-          </div>
-        </article>
-
-      </div>
-
-  <!-- ===================== VIDEOS ===================== -->
-  <!-- How to add videos:
-       1) Short clip (< ~10 MB): put the .mp4 in images/ and copy this block:
-          <figure class="video">
-            <video src="images/YOUR_CLIP.mp4" autoplay muted loop playsinline controls></video>
-            <figcaption>Caption here.</figcaption>
-          </figure>
-       2) Long video / talk: upload to YouTube, click Share > Embed, and copy this block:
-          <figure class="video">
-            <div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Talk title" allowfullscreen loading="lazy"></iframe></div>
-            <figcaption>Caption here.</figcaption>
-          </figure>
-  -->
-      <h3 class="sub" id="videos">Research in motion</h3>
-      <div class="videos">
-        <figure class="video wide">
-          <img src="images/dns_density.gif" alt="Animation of the density field in DNS of stratified turbulence at three Richardson numbers" loading="lazy">
-          <figcaption>Density field over time in direct numerical simulations of stably stratified turbulence at Richardson numbers Ri = 0.01, 1 and 10. Stronger stratification suppresses vertical overturning and mixing.</figcaption>
-        </figure>
-      </div>
   </section>
 
   <!-- ===================== PEOPLE ===================== -->
