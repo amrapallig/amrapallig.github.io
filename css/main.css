@@ -313,3 +313,6 @@ a.pub:hover { background: var(--accent); color: #fff; text-decoration: none; }
 .rbody p.credit a { color: var(--muted); text-decoration: underline; }
 .rmedia.contain video { object-fit: contain; background: #fff; }
 .rbody .who { display: block; color: var(--muted); font-size: .84rem; margin-top: 4px; }
+
+/* OSU Beaver Orange affiliation line */
+.hero .role .affil { color: #D73F09; font-weight: 500; }
