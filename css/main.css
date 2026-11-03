@@ -267,3 +267,4 @@ details.older .news { margin-top: 4px; }
 .chips li:has(a):hover { border-color: var(--accent); }
 .chips li:has(a):hover a { color: var(--accent); text-decoration: none; }
 .news a.more { font-size: .8rem; font-weight: 600; white-space: nowrap; }
+.chips .inst { color: var(--muted); font-size: .8rem; margin-left: 4px; }
