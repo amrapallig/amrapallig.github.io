@@ -311,3 +311,4 @@ a.pub:hover { background: var(--accent); color: #fff; text-decoration: none; }
 .pubs-row { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px; }
 .rbody p.credit { font-size: .72rem; color: var(--muted); margin: 10px 0 0; }
 .rbody p.credit a { color: var(--muted); text-decoration: underline; }
+.rmedia.contain video { object-fit: contain; background: #fff; }
