@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?v=20261105d">
+  <link rel="stylesheet" href="css/main.css?v=20261105e">
 </head>
 <body>
 
@@ -77,9 +77,9 @@
            Publication links use class="pub". -->
       <div class="rgrid">
         <article class="rcard wide side" id="r-param">
+          <h3 class="rtitle">Upper-ocean mixing parameterization</h3>
           <div class="rmedia contain"><img src="images/osbl.jpg" alt="Schematic of local and non-local transport in the ocean surface boundary layer"></div>
           <div class="rbody">
-            <h3>Upper-ocean mixing parameterization</h3>
             <p>New physically based closures, including hybrid mass-flux/high-order and plume-based non-local schemes, that capture mixing by convective plumes and Langmuir cells, which standard eddy-diffusivity schemes miss.</p>
             <div class="pubs-row">
               <a class="pub" href="https://doi.org/10.1029/2023MS003846">JAMES 2024</a>
@@ -90,9 +90,9 @@
           </div>
         </article>
         <article class="rcard wide" id="r-langmuir">
+          <h3 class="rtitle">Langmuir turbulence</h3>
           <div class="rmedia wide-media"><div class="panel-video"><ul class="panel-labels" aria-hidden="true"><li style="left:23.9%">Convective turbulence</li><li style="left:51.1%">Shear turbulence</li><li style="left:78.5%">Langmuir turbulence</li></ul><video src="images/langmuir_xy_slices.mp4" poster="images/langmuir_xy_slices_poster.jpg" autoplay muted loop playsinline aria-label="x–y cross sections at 1 m depth from LES of convective, shear and Langmuir turbulence, evolving over time"></video><p class="panel-note">x–y cross sections near the surface (1 m depth)</p></div></div>
           <div class="rbody">
-            <h3>Langmuir turbulence</h3>
             <p>How wind and surface waves together drive counter-rotating Langmuir cells that deepen the mixed layer. We study this with GPU-accelerated LES and second-moment closures, including in wintertime sea-ice leads.</p>
             <div class="pubs-row">
               <a class="pub" href="https://meetings-archive.aps.org/dfd/2024/x28/6/">APS DFD 2024</a>
@@ -101,16 +101,16 @@
           </div>
         </article>
         <article class="rcard" id="r-osblpt">
+          <h3 class="rtitle">Particle tracking in the ocean surface boundary layer</h3>
           <div class="rmedia contain"><video src="images/osbl_particles.mp4" autoplay muted loop playsinline aria-label="Animation of 2,048 Lagrangian particles in an LES of Langmuir turbulence, colored by vertical displacement"></video></div>
           <div class="rbody">
-            <h3>Particle tracking in the ocean surface boundary layer</h3>
             <p>GPU-enabled Lagrangian particle tracking inside high-resolution LES, used to follow how Langmuir turbulence and convection transport, disperse and mix water parcels, including non-local transport. Part of this work was done with 2025 NSF REU students.</p>
           </div>
         </article>
         <article class="rcard" id="r-dwl">
+          <h3 class="rtitle">Diurnal warm layers</h3>
           <div class="rmedia contain"><img src="images/dwl_diurnal_cycles.png" alt="LES of four diurnal cycles: surface heat flux and wind speed forcing (top) and horizontally averaged temperature versus depth and time (bottom), showing a warm layer forming each afternoon"></div>
           <div class="rbody">
-            <h3>Diurnal warm layers</h3>
             <p>How daytime solar heating, variable winds and surface waves interact to form and break down diurnal warm layers, and what that means for upper-ocean turbulence and mixing. This work combines simulations with observations from Buzzards Bay.</p>
             <div class="pubs-row">
               <a class="pub" href="publications.html#presentations">OSM 2026 poster</a>
@@ -119,9 +119,9 @@
           </div>
         </article>
         <article class="rcard wide" id="r-strat">
+          <h3 class="rtitle">Stratified turbulence and diapycnal mixing</h3>
           <div class="rmedia wide-media"><img src="images/dns_density.gif" alt="Animated density field from DNS of stratified turbulence at Ri = 0.01, 1 and 10" loading="lazy"></div>
           <div class="rbody">
-            <h3>Stratified turbulence and diapycnal mixing</h3>
             <p>Direct numerical simulation (DNS) and theory that show how stable stratification controls turbulence, mixing efficiency and diapycnal diffusivity, and how mixing can be inferred from quantities measured in the field.</p>
             <div class="pubs-row">
               <a class="pub" href="https://doi.org/10.1063/5.0102762">Phys. Fluids 2022</a>
@@ -131,11 +131,11 @@
           </div>
         </article>
         <article class="rcard" id="r-esm">
+          <h3 class="rtitle">Earth system modeling</h3>
           <div class="rmedia rart" aria-hidden="true">
             <svg viewBox="0 0 120 80"><circle cx="60" cy="40" r="28" fill="none" stroke="currentColor" stroke-width="2.5"/><ellipse cx="60" cy="40" rx="12" ry="28" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M33 30h54M33 50h54M32 40h56" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M14 64c8-4 14-4 22 0s14 4 22 0 14-4 22 0 14 4 22 0" stroke="currentColor" stroke-width="2" fill="none" opacity=".55"/></svg>
           </div>
           <div class="rbody">
-            <h3>Earth system modeling</h3>
             <p>Implementing and testing new ocean physics in the DOE's Energy Exascale Earth System Model (E3SM) and its ocean component, MPAS-Ocean, to reduce biases in climate simulations.</p>
             <div class="pubs-row">
               <a class="pub" href="https://doi.org/10.1029/2023MS003846">JAMES 2024</a>
@@ -143,9 +143,9 @@
           </div>
         </article>
         <article class="rcard" id="r-meso">
+          <h3 class="rtitle">Mesoscale mixing</h3>
           <div class="rmedia"><img src="images/light.jpg" alt="Lagrangian particles tracking eddies in a global ocean model"></div>
           <div class="rbody">
-            <h3>Mesoscale mixing</h3>
             <p>Online Lagrangian particles (the LIGHT package) in eddy-resolving MPAS-Ocean, used to quantify horizontal and vertical variability of isopycnal diffusivity. We are now extending particle tracking to GPU-based LES.</p>
             <div class="pubs-row">
               <a class="pub" href="publications.html#in-prep">Manuscript in prep</a>
@@ -153,9 +153,9 @@
           </div>
         </article>
         <article class="rcard" id="r-airsea">
+          <h3 class="rtitle">Air–sea interaction</h3>
           <div class="rmedia pair"><img src="images/cruise.jpg" alt="Research vessel at sea"><img src="images/smode-logo.jpeg" alt="NASA S-MODE logo" class="contain-img"></div>
           <div class="rbody">
-            <h3>Air–sea interaction</h3>
             <p>How SST, surface currents, diurnal warm layers and waves shape the exchange of heat and momentum between ocean and atmosphere. This work uses Saildrone data from NASA's S-MODE, observations from Buzzards Bay, and tropical coupled modeling. I also did fieldwork on the ASIRI cruise in the Bay of Bengal.</p>
             <div class="pubs-row">
               <a class="pub" href="https://doi.org/10.5670/oceanog.2016.39">Oceanography 2016</a>
@@ -164,9 +164,9 @@
           </div>
         </article>
         <article class="rcard" id="r-gpu">
+          <h3 class="rtitle">GPU computing</h3>
           <div class="rmedia pair"><img src="images/dgx.jpg" alt="An NVIDIA DGX computer"><img src="images/GPU.png" alt="Benchmark: normalized wall time versus number of grid points for single- and multi-thread CPU and V100/A100 GPU runs" class="contain-img"></div>
           <div class="rbody">
-            <h3>GPU computing</h3>
             <p>Our lab has an <strong>NVIDIA DGX</strong> system for GPU-accelerated ocean simulations. We run LES with <a href="https://github.com/CliMA/Oceananigans.jl">Oceananigans.jl</a> on DGX, A100, V100 and H100 GPUs and on Grace Hopper systems at OSU. The benchmark (right) compares wall time on CPUs and GPUs as the grid grows.</p>
             <div class="pubs-row">
               <a class="pub" href="https://agu.confex.com/agu/OSM24/meetingapp.cgi/Paper/1484469">OSM 2024</a>
@@ -175,11 +175,11 @@
           </div>
         </article>
         <article class="rcard" id="r-ice">
+          <h3 class="rtitle">Ice–ocean interaction</h3>
           <div class="rmedia rart" aria-hidden="true">
             <svg viewBox="0 0 120 80"><path d="M10 34h28l6-16 10 10 8-14 10 20h38" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linejoin="round"/><path d="M38 34v30h-6M62 34v24" stroke="currentColor" stroke-width="2" fill="none"/><path d="M66 46c6-4 10-4 16 0s10 4 16 0 10-4 14 0M66 58c6-4 10-4 16 0s10 4 16 0 10-4 14 0" stroke="currentColor" stroke-width="1.8" fill="none" opacity=".6"/></svg>
           </div>
           <div class="rbody">
-            <h3>Ice–ocean interaction</h3>
             <p>Simulations of internal waves generated by glacier calving and subglacial discharge, and their effect on submarine melting at Greenland's marine-terminating glaciers.</p>
             <div class="pubs-row">
               <a class="pub" href="publications.html#presentations">OSM 2026 · AGU 2025</a>
@@ -187,9 +187,9 @@
           </div>
         </article>
         <article class="rcard" id="r-lab">
+          <h3 class="rtitle">Laboratory experiments</h3>
           <div class="rmedia"><img src="images/Rastelloetal_R2.jpg" alt="Laboratory flume with moving instrument traverse" style="object-position:center 30%"></div>
           <div class="rbody">
-            <h3>Laboratory experiments</h3>
             <p>We measured turbulent open-channel flows with ADV and LDA on a moving traverse at Colorado State University, and I have run rotating-table and salt-fingering experiments.</p>
             <div class="pubs-row">
               <a class="pub" href="https://doi.org/10.1016/j.flowmeasinst.2022.102206">Flow Meas. Instrum. 2022</a>
@@ -198,11 +198,11 @@
           </div>
         </article>
         <article class="rcard" id="r-ai">
+          <h3 class="rtitle">Physics-informed AI</h3>
           <div class="rmedia rart" aria-hidden="true">
             <svg viewBox="0 0 120 80"><g stroke="currentColor" stroke-width="1.4" opacity=".6"><path d="M24 20L60 14M24 20L60 40M24 20L60 66M24 40L60 14M24 40L60 40M24 40L60 66M24 60L60 14M24 60L60 40M24 60L60 66M60 14L96 30M60 40L96 30M60 66L96 30M60 14L96 52M60 40L96 52M60 66L96 52"/></g><g fill="var(--surface)" stroke="currentColor" stroke-width="2.2"><circle cx="24" cy="20" r="6"/><circle cx="24" cy="40" r="6"/><circle cx="24" cy="60" r="6"/><circle cx="60" cy="14" r="6"/><circle cx="60" cy="40" r="6"/><circle cx="60" cy="66" r="6"/><circle cx="96" cy="30" r="6"/><circle cx="96" cy="52" r="6"/></g></svg>
           </div>
           <div class="rbody">
-            <h3>Physics-informed AI</h3>
             <p>Combining physics-informed machine learning and data-driven analysis to improve parameterizations of high-order turbulent fluxes in ocean and Earth system models.</p>
           </div>
         </article>
