@@ -335,3 +335,4 @@ a.pub:hover { background: var(--accent); color: #fff; text-decoration: none; }
 .rcard.side > .rtitle { grid-column: 1 / -1; }
 .rcard.side .rmedia { flex: none; }
 @media (max-width: 780px) { .rcard.side { display: flex; flex-direction: column; } }
+.plot-credit { margin: 0; padding: 6px 20px 0; font-size: .74rem; color: var(--muted); font-style: italic; }
