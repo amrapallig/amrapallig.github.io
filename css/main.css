@@ -319,3 +319,6 @@ a.pub:hover { background: var(--accent); color: #fff; text-decoration: none; }
 .rcard.wide { grid-column: 1 / -1; }
 .rmedia.wide-media { aspect-ratio: auto; background: #fff; }
 .rmedia.wide-media video { height: auto; object-fit: contain; }
+.rcard.side { flex-direction: row; }
+.rcard.side .rmedia { flex: 0 0 42%; aspect-ratio: auto; min-height: 260px; }
+@media (max-width: 780px) { .rcard.side { flex-direction: column; } .rcard.side .rmedia { flex-basis: auto; aspect-ratio: 16 / 10; min-height: 0; } }
